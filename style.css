@@ -435,6 +435,7 @@
 
 .popular__bouquet_link {
     margin: 0;
+    padding: 0;
     margin-left: 10px;
     font-family: 'Oswald';
     font-style: normal;
@@ -445,4 +446,7 @@
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #D978AC;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
