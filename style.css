@@ -3,18 +3,28 @@
 
 } */
 
+.body {
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    max-width: 1280px;
+    min-width: 320px;
+}
+
 .page {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", Arial, sans-serif;
-    font-weight: normal;
-    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: 0;
 }
 
 .header {
@@ -25,7 +35,7 @@
     background-color: rgba(0, 0, 0, 0);
     width: 100vw;
     z-index: 111;
-
+    transition: 0.2s;
 }
 
 .header__container {
@@ -49,34 +59,34 @@
 .menu__icon span,
 .menu__icon::before,
 .menu__icon::after {
-  left: 0;
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  transition: all 0.3s ease 0s;
-  background-color: rgba(67, 255, 210, 1);
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(67, 255, 210, 1);
 
 }
 
 .menu__icon::before,
 .menu__icon::after {
-  content: "";
+    content: "";
 }
 
 .menu__icon::before {
-  top: 0;
+    top: 0;
 }
 
 .menu__icon::after {
-  bottom: 0;
+    bottom: 0;
 }
 
 .menu__icon span {
-  top: 50%;
-  transform: scale(1) translate(0px, -50%);
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
 }
 
-.header__cart {
+.header__card {
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -103,7 +113,23 @@
     line-height: 13px;
 }
 
-.header__cart-icon {
+.header__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px auto 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Cormorant';
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 10px;
+    text-align: center;
+    z-index: 11;
+}
+
+.header__card-icon {
     width: 18px;
     height: 16px;
 }
@@ -111,6 +137,7 @@
 .main {
     width: 100vw;
     height: 100vh;
+    flex: 1 1 auto;
 }
 
 .main__pic {
@@ -141,22 +168,6 @@
     z-index: 12;
 }
 
-.title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 14px auto 0 auto;
-    padding: 0;
-    text-transform: uppercase;
-    font-family: 'Cormorant';
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 60px;
-    letter-spacing: 10px;
-    text-align: center;
-    z-index: 11;
-}
-
 .ellipse-red {
     position: relative;
     top: -388.77px;
@@ -179,4 +190,244 @@
     background: #249479;
     filter: blur(25px);
     transform: rotate(41.6deg);
+}
+
+/*блок каталог*/
+
+.block-button__catalog {
+    margin: 0;
+    padding: 0;
+    margin-top: 54px;
+    text-align: center;
+}
+
+.block-button__catalog_text {
+    margin: auto;
+    padding: 0;
+    max-width: 212px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.block-button__catalog_button {
+    width: 220px;
+    height: 50px;
+    background: #43FFD2;
+    border: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.block-button__catalog_button:hover {
+    opacity: 0.6;
+}
+
+/*блок: продукция. списки*/
+.range {
+    padding-bottom: 100px;
+}
+
+.range__title {
+    margin-left: 10px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.range__flowers {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.range__flowers_list {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.range__flowers_list-title {
+    margin: 0;
+    text-align: center;
+    color: #43FFD2;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.range__flowers_type {
+    margin: 0;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6px;
+    z-index: 10;
+}
+
+.range__button {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    color: #D978AC;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.range__button:hover {
+    opacity: 0.6;
+}
+
+.background__range-green {
+    content: '';
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background: rgba(36, 148, 121);
+    filter: blur(160px);
+    transform: rotate(-60deg);
+    margin-top: 31px;
+    z-index: -1;
+}
+
+.background__range_purple {
+    content: '';
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background: #7D2253;
+    filter: blur(160px);
+    transform: rotate(50deg);
+    margin-top: 447px;
+    z-index: -1;
+}
+
+/*блок popular__bouquet популярные букеты*/
+
+.popular__bouquet {
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.popular__bouquet_title {
+    margin: 0;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.popular__bouquet_subtitle {
+    margin: auto;
+    width: 247px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.popular__bouquet_img {
+    margin: 0;
+    max-width: 300px;
+    min-height: 335px;
+}
+
+.popular__bouquet_name {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.popular__bouquet_price {
+    margin: 0 auto;
+    margin-left: 10px;
+    display: flex;
+}
+
+.popular__bouquet_price-sale {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.popular__bouquet_price-without_sale {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #939393;
+}
+
+.popular__bouquet_buy {
+    margin: auto;
+    margin:20px 10px 40px 10px;
+    border: 0.5px solid #FFFFFF;
+    background-color: transparent;
+    color: white;
+    min-width: 255px;
+    height: 50px;
 }

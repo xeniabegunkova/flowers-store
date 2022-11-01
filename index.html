@@ -1,43 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flowers-store</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body class="body">
     <div class="page">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="header__cart">
-                    <p class="header__circle">1</p>
-                    <img class="header__cart-icon" src="./pic/cart.svg" alt="иконка корзины">
-
-                </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__menu">
+            <h1 class="header__title" id="header__title">lover flower</h1>
+            <div class="menu__icon">
+              <span></span>
             </div>
-        </header>
-        <main class="main">
+          </div>
+          <div class="header__card">
+            <p class="header__circle">1</p>
+            <img
+              class="header__card-icon"
+              src="./pic/cart.svg"
+              alt="иконка корзины"
+            />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__pic"></div>
+        <div class="main__pic-2"></div>
 
-            <div class="main__pic"></div>
-            <div class="main__pic-2"></div>
-            <h1 class="title" >lover flower</h1>
+        <div class="block-button__catalog">
+          <p class="block-button__catalog_text">
+            Создаём для тех, кто ценит свежесть и изящество цветка
+          </p>
+          <button
+            class="block-button__catalog_button"
+            type="button"
+            aria-label="Смотреть каталог"
+          >
+            Смотреть каталог
+          </button>
+        </div>
 
-        </main>
-        <div class="ellipse-red"></div>
-        <div class="ellipse-blue"></div>
+        <div class="range">
+          <div class="background__range-green"></div>
+          <div class="background__range_purple"></div>
+          <h2 class="range__title">каталог</h2>
+          <div class="range__flowers">
+            <div class="range__flowers_list">
+              <p class="range__flowers_list-title">Цветы</p>
+              <p class="range__flowers_type">&bull; Сборные букеты</p>
+              <p class="range__flowers_type">&bull; Монобукеты</p>
+              <p class="range__flowers_type">&bull; Композиции из цветов</p>
+              <p class="range__flowers_type">&bull; розы</p>
+              <p class="range__flowers_type">&bull; свадебные</p>
+              <button class="range__button" type="button">
+                смотреть каталог
+              </button>
+            </div>
+          </div>
+          <div class="range__flowers">
+            <div class="range__flowers_list">
+              <p class="range__flowers_list-title">
+                готовые букеты из сухоцветов
+              </p>
+              <p class="range__flowers_type">&bull; букеты</p>
+              <p class="range__flowers_type">&bull; для интерьера</p>
+              <p class="range__flowers_type">&bull; Композиции</p>
+              <button class="range__button" type="button">
+                смотреть каталог
+              </button>
+            </div>
+          </div>
+          <div class="range__flowers">
+            <div class="range__flowers_list">
+              <p class="range__flowers_list-title">дополнительно</p>
+              <p class="range__flowers_type">&bull; шары</p>
+              <p class="range__flowers_type">&bull; игрушки</p>
+              <p class="range__flowers_type">&bull; открытки</p>
+              <p class="range__flowers_type">&bull; упаковка</p>
+              <button class="range__button" type="button">
+                смотреть каталог
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular__bouquet">
+          <h2 class="popular__bouquet_title">популярные букеты</h2>
+          <p class="popular__bouquet_subtitle">
+            Самые любимые композиции наших клиентов
+          </p>
+          <div class="popular__bouquet_cell">
+            <img
+              src="./pic/bouquet1.png"
+              class="popular__bouquet_img"
+              alt="Букет 1"
+            />
+            <p class="popular__bouquet_name">лучший день</p>
+            <div class="popular__bouquet_price">
+              <p class="popular__bouquet_price-sale">167.000 &#8381;</p>
+              <p class="popular__bouquet_price-without_sale">187.000 &#8381;</p>
+            </div>
+            <button type="button" class="popular__bouquet_buy">
+              В корзину
+            </button>
+          </div>
+          <div class="popular__bouquet_cell">
+            <img
+              src="./pic/bouquet2.png"
+              class="popular__bouquet_img"
+              alt="Букет 2"
+            />
+            <p class="popular__bouquet_name">лучший день</p>
+            <div class="popular__bouquet_price">
+              <p class="popular__bouquet_price-sale">167.000 &#8381;</p>
+              <p class="popular__bouquet_price-without_sale">187.000 &#8381;</p>
+            </div>
+            <button type="button" class="popular__bouquet_buy">
+              В корзину
+            </button>
+          </div>
+          <div class="popular__bouquet_cell">
+            <img
+              src="./pic/bouquet3.png"
+              class="popular__bouquet_img"
+              alt="Букет 3"
+            />
+            <p class="popular__bouquet_name">лучший день</p>
+            <div class="popular__bouquet_price">
+              <p class="popular__bouquet_price-sale">167.000 &#8381;</p>
+              <p class="popular__bouquet_price-without_sale"></p>
+            </div>
+            <button type="button" class="popular__bouquet_buy">
+              В корзину
+            </button>
+          </div>
+        </div>
+      </main>
+      <div class="ellipse-red"></div>
+      <div class="ellipse-blue"></div>
     </div>
-
-</body>
-
+  </body>
 </html>
